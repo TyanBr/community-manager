@@ -7,9 +7,14 @@
     margin:auto;
     background-color: #cd7f32;
 }
+#title{text-align: center;}
 
+input[type="text"]{width: 50%;
+position: relative;
+left: 25%;
+margin-bottom: 5%;}
 
-
+input[type="submit"]{background-color: #78038C;}
 
 </style>
 {% endblock %}
@@ -18,46 +23,53 @@
 
 
 <div id="bronzeForm">
-    <h2>Bronze Rewards</h2>
+    <h2 id="title" >Bronze Rewards</h2>
     <form action="" method="post">
         
         <p>Which of our Bronze challenges have you completed</p>
-        <input type="radio" id="translation" name="bronzeChallenge" value="Translation">
-        <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">JavaScript</label>
+
+        <input type="radio" id="challenge1" name="bronzeChallenge" value="challenge1">
+        <label for="challenge1">Challenge 1</label><br>
+        
+
+        <input type="radio" id="challenge2" name="bronzeChallenge" value="challenge2">
+        <label for="challenge2"> Challenge 2 </label><br>
+
+
+        <input type="radio" id="challenge3" name="bronzeChallenge" value="challenge3">
+        <label for="challenge3">Challenge 3</label>
         <br /><br />
         
+        <div class="input">
         <label for="githubName">Github Name: </label>
         <br />
         <input type="text" id="githubName" name="githubName">
         <br/>
-        <br />
+        </div>
 
         <label for="githubLink">Github Link/ Pull request: </label>
         <br />
-        <input type="text" id="githubLink" name="githubLink">
+        <input type="text" id="githubLink" name="githubLink"><br/>
 
 
         <label for="fname"> First Name: </label>
         <br />
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="fname" name="fname"><br/>
 
         <label for="lname"> Last Name: </label>
         <br />
-        <input type="text" id="lname" name="lname">
+        <input type="text" id="lname" name="lname"><br/>
 
         
         <label for="address1"> Address Line 1: </label>
         <br />
-        <input type="text" id="address1" name="address1">
+        <input type="text" id="address1" name="address1"><br/>
         
         <label for="address2"> Address Line 2: </label>
         <br />
-        <input type="text" id="address2" name="address2">
+        <input type="text" id="address2" name="address2"> <br /> <br />
 
+        <input type="submit">
 
 
 
