@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+
+{% block style %}
+<style>
+#bronze{background-color:#cd7f32;}
+#silver{background-color:#c0c0c0;}
+#gold{background-color:#ffd700;}
+</style>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+
+
+<div class="container">
+<div class="row">
+
+<h1> Hello World</h1>
+</div>
+
+    <div class="row">
+        <div class="col">
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Bronze &#129353; </h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="{{ url_for('bronze')}}" class="btn btn-primary" id="bronze">See Bronze Participation Prizes</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Silver &#129352; </h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="{{ url_for('silver')}}" class="btn btn-primary" id="silver">See Silver Participation Prizes</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Gold &#129351; </h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="{{ url_for('gold')}}" class="btn btn-primary" id="gold">See Gold Participation Prizes</a>
+    </div>
+  </div>
+</div>
+    </div>
+</div>
+{% endblock %}
